@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Data</title>
+  <style>
+    body {
+      background: #a33;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      margin: 10px;
+      padding: 10px;
+    }
+    .title {
+      background: #6fa3d2;
+      color: #000;
+      font-weight: bold;
+      padding: 5px 10px;
+      width: 150px;
+      border-radius: 2px;
+      margin-bottom: 60px;
+      font-size: 18px;
+    }
+    .name-section {
+      background: #d2a33a;
+      padding: 100px 10px 10px 10px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+    }
+    .avatar {
+      background: #6fa3d2;
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      top: -45px;
+      left: 20px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      color: #000;
+      font-weight: bold;
+      border-radius: 4px;
+      font-size: 16px;
+      padding: 5px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .name-fields {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .name-fields label {
+      display: inline-block;
+      width: 180px;
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+    .name-fields input {
+      margin-bottom: 5px;
+      padding: 2px 5px;
+      font-size: 15px;
+    }
+    form {
+      margin-top: 10px;
+    }
+    .form-table {
+      margin-bottom: 15px;
+    }
+    .form-table td {
+      padding: 3px 5px;
+      font-size: 15px;
+    }
+    .form-table input {
+      width: 180px;
+      padding: 2px 5px;
+      font-size: 15px;
+    }
+    .gender, .status {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .gender label, .status label {
+      margin-right: 15px;
+      font-size: 15px;
+    }
+    .select-univ {
+      margin-bottom: 10px;
+    }
+    .submit-btn {
+      background: #222;
+      color: #fff;
+      border: none;
+      padding: 6px 18px;
+      font-size: 15px;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    .submit-btn:hover {
+      background: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Personal Data</div>
+    <div class="name-section">
+      <div class="avatar">
+        <div style="align-items: center; justify-content: center; display: flex; height: 100%;">YourName</div>
+      </div>
+      <div class="name-fields">
+        <label>first name : <input type="text" placeholder="ex.ahmed"></label>
+        <label>second name : <input type="text" placeholder="ex.bahnasy"></label>
+      </div>
+    </div>
+    <form>
+      <table class="form-table">
+        <tr>
+          <td>your phone :</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Email :</td>
+          <td><input type="email"></td>
+        </tr>
+        <tr>
+          <td>password :</td>
+          <td><input type="password"></td>
+        </tr>
+        <tr>
+          <td>re-password :</td>
+          <td><input type="password"></td>
+        </tr>
+      </table>
+      <div class="gender">
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+      </div>
+      <div class="status">
+        <label><input type="checkbox" name="student"> Student</label>
+        <label><input type="checkbox" name="graduated"> Graduated</label>
+      </div>
+      <div class="select-univ">
+        <select>
+          <option>AUC</option>
+          <option>Cairo University</option>
+          <option>GUC</option>
+        </select>
+      </div>
+      <button type="submit" class="submit-btn">SUBMIT</button>
+    </form>
+  </div>
+</body>
+</html> 
